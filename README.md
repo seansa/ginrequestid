@@ -12,7 +12,7 @@ If ``X-Request-Id`` header is sent in the request, it will set that value as ``R
 Use ```go get``` to fetch the package:
 
 ```bash
-$ go get github.com/atarantini/ginrequestid
+$ go get github.com/seansa/ginrequestid
 ```
 
 
@@ -24,7 +24,7 @@ Import it and use it in your router:
 import (
     ...
     "github.com/gin-gonic/gin"
-    "github.com/atarantini/ginrequestid"
+    "github.com/seansa/ginrequestid"
     ...
 )
 
