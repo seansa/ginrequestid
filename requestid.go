@@ -19,8 +19,7 @@ func RequestId() gin.HandlerFunc {
 
 		// Create request id with UUID4
 		if requestID == "" {
-			uuid4 := uuid.Must(uuid.NewRandom())
-			requestID = uuid4.String()
+			requestID = uuid.Must(uuid.NewRandom()).String()
 		}
 
 		// Expose it for use in the application
