@@ -9,7 +9,7 @@ package ginrequestid
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/satori/go.uuid"
+	"github.com/google/uuid"
 )
 
 func RequestId() gin.HandlerFunc {
@@ -19,7 +19,7 @@ func RequestId() gin.HandlerFunc {
 
 		// Create request id with UUID4
 		if requestID == "" {
-			uuid4, _ := uuid.NewV4()
+			uuid4 := uuid.Must(uuid.NewRandom())
 			requestID = uuid4.String()
 		}
 
